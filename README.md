@@ -1,2 +1,12 @@
 # android
-android project，组件化开发，MVP架构，Glide图片库，干货集中营API
+
+1.组件化开发
+把不同的业务区分开，每一个业务作为一个组件，即一个业务对应项目的一个library，也可以单独作为application进行开发，这样可以提高开发效率，同时减少项目的维护成本，适用于业务比较复杂的项目。
+组件之间的通信，跨组件跳转使用阿里巴巴的开源的路由框架（ARouter）。
+
+2.MVP架构
+MVP架构，即Model数据层，View视图层，和Presenter业务层，把数据层和视图层分开，不直接进行交互，而是通过Presenter业务层进行交互，从而降低耦合，方便维护。
+
+3.Glide图片库
+Glide是一个快速高效的Android图片加载库，注重于平滑的滚动。Glide提供了易用的API，高性能、可扩展的图片解码管道（decode pipeline），以及自动的资源池技术，Google官方推荐的图片加载库。
+
