@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jc.yooyoplus.common.view.MyTextView
+        android:id="@+id/gank_activity_web_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/fa_angle_left"
+        android:textSize="24sp"
+        android:textColor="@color/color_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/gank_activity_web_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="信息详情"
+        android:textSize="16sp"
+        android:textColor="@color/color_black"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <com.jc.yooyoplus.gank.web.MyWebView
+        android:id="@+id/gank_activity_xiandu_mwv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"/>
+    <!--android:cacheColorHint="@color/transparent"-->
+
+    <ProgressBar
+        android:id="@+id/gank_activity_xiandu_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:progressDrawable="@drawable/progress_bar"
+        app:layout_constraintBottom_toTopOf="@+id/gank_activity_xiandu_mwv"
+        android:visibility="gone"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        app:layout_constraintBottom_toTopOf="@+id/gank_activity_xiandu_mwv"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_xlarge">16dp</dimen>
+    <dimen name="division_line">0.5dp</dimen>
+    <dimen name="spacing_left">4dp</dimen>
+    <dimen name="spacing_right">4dp</dimen>
+    <dimen name="spacing_top">2dp</dimen>
+    <dimen name="spacing_bottom">2dp</dimen>
+    <dimen name="title">20sp</dimen>
+</resources>

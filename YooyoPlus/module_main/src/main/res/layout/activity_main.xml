@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:myradio="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cccccc"/>
+
+        <RadioGroup
+            android:id="@+id/activity_main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.jc.yooyoplus.common.view.MyRadioButton
+                android:id="@+id/activity_main_rb1"
+                style="@style/main_bottom"
+                android:text="闲读"
+                myradio:drawsize="18sp"
+                myradio:select_color="@color/black"
+                myradio:select_color_no="@color/gray"
+                myradio:txt_draw="@string/fa_list"
+                myradio:txt_draw_select="@string/fa_list"
+                android:textSize="12sp"/>
+
+            <com.jc.yooyoplus.common.view.MyRadioButton
+                android:id="@+id/activity_main_rb2"
+                style="@style/main_bottom"
+                android:text="妹子"
+                myradio:drawsize="18sp"
+                myradio:select_color="@color/black"
+                myradio:select_color_no="@color/gray"
+                myradio:txt_draw="@string/fa_venus"
+                myradio:txt_draw_select="@string/fa_venus"
+                android:textSize="12sp"/>
+
+            <com.jc.yooyoplus.common.view.MyRadioButton
+                android:id="@+id/activity_main_rb3"
+                style="@style/main_bottom"
+                android:text="关于"
+                myradio:drawsize="18sp"
+                myradio:select_color="@color/black"
+                myradio:select_color_no="@color/gray"
+                myradio:txt_draw="@string/fa_info"
+                myradio:txt_draw_select="@string/fa_info"
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main_ll"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

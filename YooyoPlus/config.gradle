@@ -1,0 +1,19 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.0",
+            applicationId    : "com.jc.yooyoplus",
+            minSdkVersion    : 22,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+    //依赖第三方配置
+    dependencies = [
+            //阿里路由框架
+            "arouter-api"                          : "com.alibaba:arouter-api:1.5.0",
+            "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2"
+    ]
+}

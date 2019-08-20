@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.jc.yooyoplus.common.view.MyTextView-->
+        <!--android:id="@+id/gank_fragment_about_icon"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/fa_eye"-->
+        <!--android:textSize="96sp"-->
+        <!--android:textColor="@color/color_black"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:background="@drawable/circle_gray_white_drawable"-->
+        <!--android:layout_marginTop="30dp"/>-->
+
+    <!--
+        本应用的开发是为了相关技术的实践和学习，主要采用了组件化开发，MVP架构，Glide图片库等，数据接口使用的干货集中营
+        提供的API，在此表示感谢！
+        相关方面如有侵犯，敬请联系告知，同时也欢迎技术交流，相互学习。
+        联系方式（微信）：jackie_zx_chen
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本应用的开发是为了相关技术的实践和学习，主要采用了组件化开发，MVP架构，Glide图片库等，数据接口使用的干货集中营提供的API，在此表示感谢！
+        \n相关方面如有侵犯，敬请联系告知，同时也欢迎技术交流，相互学习。
+        \n联系方式（微信）：jackie_zx_chen"
+        android:textSize="16sp"
+        android:textColor="@color/color_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"/>
+    <!--app:layout_constraintTop_toBottomOf="@+id/gank_fragment_about_icon"-->
+</android.support.constraint.ConstraintLayout>
